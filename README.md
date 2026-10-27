@@ -149,6 +149,18 @@ Corrigir a ordem dos campos de origem e destino na gravação do extrato e repro
 
 ---
 
+## RODADA 5: A fábrica que devolve null
+
+**Tipo:** rodada · **Voto:** A
+
+**Justificativa:**
+
+Alterar a `ContaFactory` para lançar uma exceção clara quando receber um tipo de conta inválido, evitando que retorne `null` e cause um erro genérico posteriormente no repositório. Embora a decisão reduza a reputação em 1 ponto, ela identifica a falha na origem, facilita o diagnóstico e evita aumentar a dívida técnica.
+
+**Placar do grupo após esta decisão:** 🔥 9 · 💰 R$ 65 mil · 🧹 -1
+
+---
+
 ## 🔎 O caminho do MEU grupo (preencher na 3ª aula, quando o mapa for revelado)
 
 Uma linha por decisão registrada acima (usem os títulos ditados em aula):
