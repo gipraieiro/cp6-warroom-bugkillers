@@ -113,6 +113,18 @@ Corrigir a regra de negócio para impedir saldo negativo e adicionar um teste co
 
 ---
 
+## RODADA 2: A injeção que derreteu o banco
+
+**Tipo:** rodada · **Voto:** D
+
+**Justificativa:**
+
+Utilizar uma consulta derivada do Spring Data JPA, como `findByTitular`, evitando a montagem manual de consultas SQL e aproveitando a parametrização oferecida pelo framework. Embora demande mais tempo de implementação, essa alternativa facilita a manutenção e reduz o risco de falhas na construção das consultas.
+
+**Placar do grupo após esta decisão:** 🔥 8 · 💰 R$ 35 mil · 🧹 0
+
+---
+
 ## 🔎 O caminho do MEU grupo (preencher na 3ª aula, quando o mapa for revelado)
 
 Uma linha por decisão registrada acima (usem os títulos ditados em aula):
