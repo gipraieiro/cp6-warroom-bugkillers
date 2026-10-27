@@ -101,7 +101,7 @@ segurança × faturamento × dívida). "Porque é mais seguro" não é justifica
 *(as decisões entram aqui, na ordem em que a madrugada as trouxer; placar inicial:
 🔥 7 · 💰 0 · 🧹 2)*
 
-## RODADA 1: O saldo que virou negativo
+## RODADA 1: O saldo que virou negativo (19h12)
 
 **Tipo:** rodada · **Voto:** C
 
@@ -113,7 +113,7 @@ Corrigir a regra de negócio para impedir saldo negativo e adicionar um teste co
 
 ---
 
-## RODADA 2: A injeção que derreteu o banco
+## RODADA 2: A injeção que derreteu o banco (21h02)
 
 **Tipo:** rodada · **Voto:** D
 
@@ -125,7 +125,7 @@ Utilizar uma consulta derivada do Spring Data JPA, como `findByTitular`, evitand
 
 ---
 
-## RODADA 3: A noite das contas gêmeas
+## RODADA 3: A noite das contas gêmeas (22h50)
 
 **Tipo:** rodada · **Voto:** A
 
@@ -137,7 +137,7 @@ Corrigir o método `getInstance()` para reutilizar a mesma instância do gerador
 
 ---
 
-## RODADA 4: O comprovante que aponta pra pessoa errada
+## RODADA 4: O comprovante que aponta pra pessoa errada (00h47)
 
 **Tipo:** rodada · **Voto:** B
 
@@ -149,7 +149,7 @@ Corrigir a ordem dos campos de origem e destino na gravação do extrato e repro
 
 ---
 
-## RODADA 5: A fábrica que devolve null
+## RODADA 5: A fábrica que devolve null (01h30)
 
 **Tipo:** rodada · **Voto:** A
 
@@ -161,7 +161,7 @@ Alterar a `ContaFactory` para lançar uma exceção clara quando receber um tipo
 
 ---
 
-## EVENTO RELÂMPAGO C: O cadastro com metade dos campos
+## EVENTO RELÂMPAGO C: O cadastro com metade dos campos (02h20)
 
 **Tipo:** relâmpago · **Voto:** B
 
@@ -170,6 +170,18 @@ Alterar a `ContaFactory` para lançar uma exceção clara quando receber um tipo
 Adotar o padrão Builder para concentrar valores padrão e validações na construção do objeto, permitindo o cadastro com os campos disponíveis sem criar mais construtores sobrecarregados. Essa abordagem atende à necessidade da landing page sem aumentar a dívida técnica, ao contrário da criação de novos construtores ou da propagação de valores `null`.
 
 **Placar do grupo após esta decisão:** 🔥 9 · 💰 R$ 65 mil · 🧹 -1
+
+---
+
+## RODADA 6: O teste vermelho às 03h45 (a janela fecha às 04h)
+
+**Tipo:** rodada · **Voto:** B
+
+**Justificativa:**
+
+Investigar a causa da taxa TED incorreta e corrigir o serviço, mantendo o teste que valida o contrato de R$ 5,00. Embora a equipe perca a janela de deploy e tenha prejuízo imediato, evita mascarar a falha desabilitando ou alterando o teste e reduz a dívida técnica.
+
+**Placar do grupo após esta decisão:** 🔥 8 · 💰 R$ 95 mil · 🧹 -2
 
 ---
 
