@@ -8,19 +8,20 @@
 > **Os incidentes da madrugada são revelados só em aula.** O título de cada registro
 > será **ditado pelo professor na hora**; ninguém se antecipe.
 
-**Grupo (nome da equipe plantonista):** ______________________________________
+**Grupo (nome da equipe plantonista):** BugKillers
 
-**Turma:** ____________ **Repo:** `cp6-warroom-____________________`
+**Turma:** 2CCPO **Repo:** `cp6-warroom-bugkillers`
 
 **Integrantes (nome + RM):**
 
 | Nome | RM |
 |---|---|
-| | |
-| | |
-| | |
-| | |
-| | |
+| Gabrielly Lorentz | 565806 |
+| Giovanna Praieiro | 565681 |
+| Julia Aparicio | 563623 |
+| Heitor Barbosa | 563078 |
+| Maria Eduarda de Oliveira | 565386 |
+| Nicolle Calasans | 564381 |
 
 ## 0. Setup do repositório (antes da 1ª aula; podem apagar esta seção depois)
 
@@ -99,6 +100,16 @@ segurança × faturamento × dívida). "Porque é mais seguro" não é justifica
 
 *(as decisões entram aqui, na ordem em que a madrugada as trouxer; placar inicial:
 🔥 7 · 💰 0 · 🧹 2)*
+
+## RODADA 1: O saldo que virou negativo
+
+**Tipo:** rodada · **Voto:** C
+
+**Justificativa:**
+
+Corrigir a regra de negócio para impedir saldo negativo e adicionar um teste com `assertThrows`, garantindo que transferências sem saldo suficiente sejam recusadas. Embora exija mais trabalho imediato que um hotfix, a solução reduz o risco de recorrência e a dívida técnica.
+
+**Placar do grupo após esta decisão:** 🔥 8 · 💰 R$ 35 mil · 🧹 1
 
 ---
 
