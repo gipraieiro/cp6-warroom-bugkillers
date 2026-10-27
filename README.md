@@ -125,6 +125,18 @@ Utilizar uma consulta derivada do Spring Data JPA, como `findByTitular`, evitand
 
 ---
 
+## RODADA 3: A noite das contas gêmeas
+
+**Tipo:** rodada · **Voto:** A
+
+**Justificativa:**
+
+Corrigir o método `getInstance()` para reutilizar a mesma instância do gerador de contas, evitando que o contador seja reiniciado e produza números duplicados. Essa solução é rápida e preserva a geração sequencial exigida pelo sistema, embora seja importante garantir o comportamento correto em acessos concorrentes.
+
+**Placar do grupo após esta decisão:** 🔥 9 · 💰 R$ 40 mil · 🧹 0
+
+---
+
 ## 🔎 O caminho do MEU grupo (preencher na 3ª aula, quando o mapa for revelado)
 
 Uma linha por decisão registrada acima (usem os títulos ditados em aula):
