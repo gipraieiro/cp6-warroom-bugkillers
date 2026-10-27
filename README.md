@@ -161,6 +161,18 @@ Alterar a `ContaFactory` para lançar uma exceção clara quando receber um tipo
 
 ---
 
+## EVENTO RELÂMPAGO C: O cadastro com metade dos campos
+
+**Tipo:** relâmpago · **Voto:** B
+
+**Justificativa:**
+
+Adotar o padrão Builder para concentrar valores padrão e validações na construção do objeto, permitindo o cadastro com os campos disponíveis sem criar mais construtores sobrecarregados. Essa abordagem atende à necessidade da landing page sem aumentar a dívida técnica, ao contrário da criação de novos construtores ou da propagação de valores `null`.
+
+**Placar do grupo após esta decisão:** 🔥 9 · 💰 R$ 65 mil · 🧹 -1
+
+---
+
 ## 🔎 O caminho do MEU grupo (preencher na 3ª aula, quando o mapa for revelado)
 
 Uma linha por decisão registrada acima (usem os títulos ditados em aula):
