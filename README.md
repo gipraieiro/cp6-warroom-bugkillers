@@ -137,6 +137,18 @@ Corrigir o método `getInstance()` para reutilizar a mesma instância do gerador
 
 ---
 
+## RODADA 4: O comprovante que aponta pra pessoa errada
+
+**Tipo:** rodada · **Voto:** B
+
+**Justificativa:**
+
+Corrigir a ordem dos campos de origem e destino na gravação do extrato e reprocessar os registros antigos para restaurar a integridade dos dados. Embora a solução leve cerca de duas horas e gere maior prejuízo imediato, ela garante que os comprovantes antigos e novos respeitem o contrato do banco e reduz a dívida técnica.
+
+**Placar do grupo após esta decisão:** 🔥 10 · 💰 R$ 65 mil · 🧹 -1
+
+---
+
 ## 🔎 O caminho do MEU grupo (preencher na 3ª aula, quando o mapa for revelado)
 
 Uma linha por decisão registrada acima (usem os títulos ditados em aula):
