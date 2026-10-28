@@ -185,6 +185,18 @@ Investigar a causa da taxa TED incorreta e corrigir o serviço, mantendo o teste
 
 ---
 
+## RODADA 7: Go/No-Go da Black Friday (06h15)
+
+**Tipo:** rodada · **Voto:** B
+
+**Justificativa:**
+
+Corrigir o problema identificado no TransferenciaService e revisar a taxa TED antes de abrir a campanha. Embora a abertura com duas horas de atraso gere prejuízo financeiro e reduza o aproveitamento inicial da Black Friday, a decisão prioriza a confiabilidade das transações e evita expor os clientes a cobranças indevidas.
+
+**Placar do grupo após esta decisão:** 🔥 9 · 💰 R$ 195 mil · 🧹 -3
+
+---
+
 ## 🔎 O caminho do MEU grupo (preencher na 3ª aula, quando o mapa for revelado)
 
 Uma linha por decisão registrada acima (usem os títulos ditados em aula):
