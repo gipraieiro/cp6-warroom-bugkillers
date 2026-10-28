@@ -203,9 +203,14 @@ Uma linha por decisão registrada acima (usem os títulos ditados em aula):
 
 | # | Decisão | Nossa letra | Consequência que ELA teria tido |
 |---|---|---|---|
-| | | | |
-| | | | |
-| | | | |
+| 1 | O saldo que virou negativo | C | 🔥 +1 · 💰 +R$ 35 mil · 🧹 -1 |
+| 2 | A injeção que derreteu o banco | D | 🔥 0 · 💰 R$ 0 mil · 🧹 -1 |
+| 3 | A noite das contas gêmeas | A | 🔥 +1 · 💰 +R$ 5 mil · 🧹 0 |
+| 4 | O comprovante que aponta para a pessoa errada | B | 🔥 +1 · 💰 +R$ 25 mil · 🧹 -1 |
+| 5 | A fábrica que devolve null | A | 🔥 -1 · 💰 R$ 0 mil · 🧹 0 |
+| 6 | EVENTO RELÂMPAGO C: O cadastro com metade dos campos | B | Sem alteração nos indicadores |
+| 7 | O teste vermelho às 03h45 (a janela fecha às 04h) | B | 🔥 -1 · 💰 +R$ 30 mil · 🧹 -1 |
+| 8 | Go/No-Go da Black Friday | B | 🔥 +1 · 💰 +R$ 100 mil · 🧹 -1 |
 
 *(adicionem linhas conforme as decisões da madrugada)*
 
@@ -217,32 +222,28 @@ Uma linha por decisão registrada acima (usem os títulos ditados em aula):
 
 ## 1. Linha do tempo da madrugada
 
-_______________________________________________________________________________________
+Nas primeiras rodadas, o grupo tomou decisões para corrigir problemas financeiros e técnicos do FiapBank, considerando os impactos sobre o saldo, a estabilidade do sistema e a dívida técnica.
 
-_______________________________________________________________________________________
+Na Rodada 2, o grupo lidou com um problema de parametrização da consulta SQL/JDBC. Na Rodada 5, enfrentou uma falha relacionada à Factory, em que um tipo inválido retornava null, causando uma exceção.
 
-_______________________________________________________________________________________
+Na Rodada 6, o grupo decidiu investigar a causa da taxa TED incorreta e corrigir o serviço, mantendo o teste que validava o contrato de R$ 5,00. Na Rodada 7, decidiu priorizar a confiabilidade das transações e revisar a taxa TED antes de abrir a campanha de Black Friday, mesmo com o atraso de duas horas.
 
 ## 2. Causa raiz de 2 incidentes (aula + mecanismo técnico)
 
-**Incidente 1:** _______________________________________________
+**Incidente 1: R2 — A injeção que derreteu o banco**
 
-Aula/mecanismo:
+Aula/mecanismo: Aula 12 — Conectando ao Banco Oracle (JDBC). O problema está relacionado à construção insegura de consultas SQL, que pode permitir SQL Injection. O uso de consultas parametrizadas ajuda a impedir que entradas do usuário sejam interpretadas como parte do comando SQL, aumentando a segurança e a integridade dos dados.
 
-_______________________________________________________________________________________
+**Incidente 2: R5 — A fábrica que devolve null**
 
-**Incidente 2:** _______________________________________________
-
-Aula/mecanismo:
-
-_______________________________________________________________________________________
+Aula/mecanismo: Aula 14 — A Fábrica de ObjSetos (Padrões Criacionais). O problema ocorre quando a ContaFactory recebe um tipo inválido e retorna null. Isso transfere o erro para o ponto em que o objeto é utilizado, podendo provocar uma exceção e dificultar o diagnóstico. Uma alternativa é lançar uma exceção clara quando o tipo não for suportado, tornando a falha explícita.
 
 ## 3. O que faríamos diferente (2 rodadas + por quê)
 
-_______________________________________________________________________________________
+**Rodada 1:** Investigar melhor as causas do problema antes de decidir, avaliando os impactos técnicos e financeiros para evitar que uma correção rápida gere novos riscos.
 
-_______________________________________________________________________________________
+**Rodada 6:** Manter a validação do contrato de R$ 5,00 e priorizar a correção da causa raiz da taxa TED, evitando mascarar a falha e aumentar a dívida técnica.
 
 ## 4. A maior lição da equipe
 
-_______________________________________________________________________________________
+Aprendemos que decisões técnicas precisam equilibrar urgência operacional, impacto financeiro, integridade dos dados e confiança dos clientes. Corrigir a causa raiz e preservar os testes é essencial para manter a confiabilidade do sistema, mesmo quando isso exige atrasar uma entrega ou campanha.
